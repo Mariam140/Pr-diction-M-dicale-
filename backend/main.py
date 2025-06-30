@@ -4,7 +4,8 @@ import joblib
 import numpy as np
 
 # Charger le modèle et le scaler
-model, scaler = joblib.load("main.pkl")
+model = joblib.load("model/main.pkl")
+
 
 class HeartData(BaseModel):
     age: int
